@@ -38,3 +38,5 @@ COPY external_modules /code/external_modules
 COPY kernel /code/kernel
 COPY tests /code/tests
 COPY *.py /code/
+COPY run_server.sh /code/run_server.sh
+RUN ["chmod", "+x", "/code/run_server.sh"]
